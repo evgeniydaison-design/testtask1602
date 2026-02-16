@@ -1,12 +1,5 @@
-# Backend
-backend/vendor
-backend/node_modules
-backend/.env
-backend/public/hot
-backend/public/storage
-backend/storage/*.key
-backend/.phpunit.cache
-backend/.phpunit.result.cache
+# Backend — не пушим, только backend-src (по README делают composer create-project + copy)
+backend/
 
 # Frontend
 frontend/node_modules
