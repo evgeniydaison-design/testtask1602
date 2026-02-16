@@ -13,7 +13,7 @@ Copy-Item -Path "backend-src\*" -Destination "backend\" -Recurse -Force
 cd backend
 copy .env.example .env
 php artisan key:generate
-type nul > database\database.sqlite
+type nul > database\database.sqlite или New-Item -Path database\database.sqlite -ItemType File -Force
 php artisan migrate --seed
 php artisan serve
 ```
